@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+
+	    <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css?v=3.2.0">
+<script data-cfasync="false" nonce="a0fb7f20-47ad-4d89-8fdc-31f56a267acd">try{(function(w,d){!function(ne,nf,ng,nh){if(ne.zaraz)console.error("zaraz is loaded twice");else{ne[ng]=ne[ng]||{};ne[ng].executed=[];ne.zaraz={deferred:[],listeners:[]};ne.zaraz._v="5823";ne.zaraz._n="a0fb7f20-47ad-4d89-8fdc-31f56a267acd";ne.zaraz.q=[];ne.zaraz._f=function(ni){return async function(){var nj=Array.prototype.slice.call(arguments);ne.zaraz.q.push({m:ni,a:nj})}};for(const nk of["track","set","debug"])ne.zaraz[nk]=ne.zaraz._f(nk);ne.zaraz.init=()=>{var nl=nf.getElementsByTagName(nh)[0],nm=nf.createElement(nh),nn=nf.getElementsByTagName("title")[0];nn&&(ne[ng].t=nf.getElementsByTagName("title")[0].text);ne[ng].x=Math.random();ne[ng].w=ne.screen.width;ne[ng].h=ne.screen.height;ne[ng].j=ne.innerHeight;ne[ng].e=ne.innerWidth;ne[ng].l=ne.location.href;ne[ng].r=nf.referrer;ne[ng].k=ne.screen.colorDepth;ne[ng].n=nf.characterSet;ne[ng].o=(new Date).getTimezoneOffset();if(ne.dataLayer)for(const no of Object.entries(Object.entries(dataLayer).reduce(((np,nq)=>({...np[1],...nq[1]})),{})))zaraz.set(no[0],no[1],{scope:"page"});ne[ng].q=[];for(;ne.zaraz.q.length;){const nr=ne.zaraz.q.shift();ne[ng].q.push(nr)}nm.defer=!0;for(const ns of[localStorage,sessionStorage])Object.keys(ns||{}).filter((nu=>nu.startsWith("_zaraz_"))).forEach((nt=>{try{ne[ng]["z_"+nt.slice(7)]=JSON.parse(ns.getItem(nt))}catch{ne[ng]["z_"+nt.slice(7)]=ns.getItem(nt)}}));nm.referrerPolicy="origin";nm.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(ne[ng])));nl.parentNode.insertBefore(nm,nl)};["complete","interactive"].includes(nf.readyState)?zaraz.init():ne.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async br=>new Promise((bs=>{if(br){br.e&&br.e.forEach((bt=>{try{const bu=d.querySelector("script[nonce]"),bv=bu?.nonce||bu?.getAttribute("nonce"),bw=d.createElement("script");bv&&(bw.nonce=bv);bw.innerHTML=bt;bw.onload=()=>{d.head.removeChild(bw)};d.head.appendChild(bw)}catch(bx){console.error(`Error executing script: ${bt}\n`,bx)}}));Promise.allSettled((br.f||[]).map((by=>fetch(by[0],by[1]))))}bs()}));zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
+<!--
+	  
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Penelitian | Herman Kaelani</title>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Herman Kaelani</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">PENJELASAN PENELITIAN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">LEMBAR INFORMED CONSENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#daftar">Daftar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="img/herman.jpg" alt="Herman Kaelani" width="200" class="rounded-circle border-primary img-thumbnail" />
+      <h1 class="display-4">Herman Kaelani</h1>
+      <h2 class="display-4">Mahasiswa Apikes Bhumi Husada Jakarta</h2>
+      <p class="lead">Penjelasan Penelitian</p>
+      <p>Penelitian ini bertujuan untuk menganalisis tahapan pelaksanaan Rekam Medis Elektronik (RME) di RS Orthopedi Siaga Raya menggunakan model Delone and McLean Information System Success (D&M). Semua informasi yang diberikan akan dirahasiakan dan hanya digunakan untuk kepentingan penelitian.</p>
+      <p>Salam</p>
+      <p>Herman Kaelani</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="10"
+          d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,80C672,64,768,64,864,96C960,128,1056,192,1152,186.7C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-8">
+            <p>Bekerja dengan ikhlas adalah caraku mencapai jannah (surga), bekerja bukan hanya untuk mencari materi, melihat orang tersenyum dengan hasil kerjaku sudah merupakan kepuasan bagiku</p>
+          </div>
+          <!-- <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quibusdam animi odit unde sequi voluptatibus quo rem perferendis eos, numquam in porro cumque a hic!</p>
+          </div> -->
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="10"
+          d="M0,96L48,122.7C96,149,192,203,288,192C384,181,480,107,576,80C672,53,768,75,864,101.3C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/1.jpg" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <p class="card-text text-center"><b>Aplikasi Rekam Medis Berbasis Excel</b></p>
+                <p class="card-text text-center">Aplikasi ini terdiri dari fitur Peminjaman Rekam Medis, Ekspedisi Pengembalian Rekam Medis, Analisa Kuantitatif Rekam Medis, Sensus Kematian, Retensi Pasien dll.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/2.jpg" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+              	<p class="card-text text-center"><b>Aplikasi HK KLINIK</b></p>
+                <p class="card-text text-center">Aplikasi ini berbasib WEB diperuntukan untuk sebuah klinik atau praktek dirumah secara offline atau online.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/3.jpg" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+              	<p class="card-text text-center"><b>Aplikasi HK KLINIK</b></p>
+                <p class="card-text text-center">Fitur dari aplikasi ini terdiri dari Pengelolaan Manajemen User termasuk Hak Akses, Dashboard, Farmasi Obat, Manajemen Dokter, Master Pasien, Pendaftaran Pasien, Rekam Medis / Kunjungan Pasien, Kasir, Laporan dll.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/4.jpg" class="card-img-top" alt="Project 4" />
+              <div class="card-body">
+              	<p class="card-text text-center"><b>Aplikasi BANK DATA Berbasis Excel</b></p>
+                <p class="card-text text-center">Aplikasi ini ditujukan baik untuk RS/Klinik ataupun perseorangan untuk membuat Bank Data, fitur dapat disesuaikan dengan keingininan atau kebutuhan.</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/5.jpg" class="card-img-top" alt="Project 5" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="10"
+          d="M0,192L30,208C60,224,120,256,180,245.3C240,235,300,181,360,181.3C420,181,480,235,540,261.3C600,288,660,288,720,272C780,256,840,224,900,218.7C960,213,1020,235,1080,245.3C1140,256,1200,256,1260,250.7C1320,245,1380,235,1410,229.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Projects -->
+
+<!--     Menu Daftar -->
+        <!-- Contact -->
+    <section id="daftar">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Daftar Pasien</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <form name="herman-contact-form">
+             <div class="content-wrapper">
+	<!-- Content Header (Page header) -->
+	<section class="content">
+      <div class="col-12">
+        <h4 class="mb-3">Form Pendaftaran Pasien baru</h4>
+        <form class="needs-validation card" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">No Rekam Medis</label>
+              <input type="text" class="form-control" id="firstName" placeholder="number" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">NIK</label>
+              <input type="text" class="form-control" id="lastName" placeholder="number" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Nama Pasien</label>
+              <div class="input-group has-validation">
+<!--                 <span class="input-group-text">@</span> -->
+                <input type="text" class="form-control" id="username" placeholder="text" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+<!-- 		  Tempat & tgl lahir -->
+		            <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Tempat Lahir</label>
+              <input type="text" class="form-control" id="firstName" placeholder="text" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Tanggal Lahir</label>
+              <input type="text" class="form-control" id="lastName" placeholder="date" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+<!-- 		  end -->
+<!-- 				    Jenis kelamin -->
+				                <div class="col-md-6">
+              <label for="country" class="form-label">Jenis Kelamin</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>Laki-Laki</option>
+		<option>Perempuan</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+<!-- 				    Agama -->
+	  <div class="col-md-4">
+              <label for="state" class="form-label">Agama</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>Islam</option>
+		   <option>Kristen</option>
+		<option>Khatolik</option>
+		<option>Budha</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+				    
+<!-- 				    end -->
+
+            <div class="col-6">
+              <label for="email" class="form-label">No. Telp </label>
+              <input type="email" class="form-control" id="email" placeholder="number">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+	  <div class="col-6">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="text">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Alamat</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Kota</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>Jakarta Selatan</option>
+		<option>Jakarta Pusat</option>
+		<option>Jakarta Timur</option>
+		<option>Jakarta Utara</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Kelurahan</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>Pasar Minggu/option>
+		<option>Jagakarsa</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Kode Pos</label>
+              <input type="text" class="form-control" id="zip" placeholder="number" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+        
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to Daftar</button>
+        </form>
+				<!-- /.card-body -->
+			</div>
+			<!-- /.card -->
+		</div>
+	</section>
+</div>
+
+
+
+<!-- modal Jaminan -->
+<div class="modal fade" id="modal-penjamin">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">elect Penjamin</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body table-responsive p-1">
+				<table class="table table-bordered table-striped display responsive nowrap" style="width:100%" id="tablepenjamin">
+					<thead>
+						<tr>
+							<th>No.</th>
+							<th>Kode Penjamin</th>
+							<th>Nama Penjamin</th>
+							<th>actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php $no = 1;
+						foreach ($penjamin as  $data) { ?>
+							<tr>
+								<td class="text-center"><?= $no; ?></td>
+								<td><?= $data['kode_penjamin']; ?></td>
+								<td><?= $data['nama_penjamin']; ?></td>
+								<td>
+									<button class="btn btn-sm btn-info" id="selectpenjamin" data-id="<?= $data['id'] ?>" data-kode_penjamin="<?= $data['kode_penjamin'] ?>" data-nama_penjamin="<?= $data['nama_penjamin'] ?>">
+										<i class="fa fa-check"></i>pilih
+									</button>
+								</td>
+							</tr>
+						<?php $no++;
+						} ?>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- tgl Lahir -->
+<script>
+	$(document).ready(function() {
+		$("#tgl").datetimepicker({
+			format: "DD-MM-YYYY",
+			autoclose: true
+		});
+	}).attr('autocomplete', 'off');
+</script>
+
+<script>
+	$(document).ready(function(e) {
+		$('.formtambahbaru').submit(function(e) {
+			$.ajax({
+				url: $(this).attr('action'),
+				data: $(this).serialize(),
+				type: 'post',
+				dataType: 'json',
+				cache: false,
+				beforeSend: function() {
+					$('.tombolsimpan').attr('disabled', 'disabled');
+					$('.tombolsimpan').html('<i class="fa fa-spin fa-spinner"></i> Sedang Proses');
+
+				},
+				complete: function() {
+					$('.tombolsimpan').removeAttr('disabled');
+					$('.tombolsimpan').html('<i class="fa fa-save"></i> Simpan Data');
+				},
+
+				error: function(e) {
+					swal('Error', e, 'error');
+				},
+				success: function(data) {
+					if (data.validasi) {
+						$('.pesan').fadeIn();
+						$('.pesan').html(data.validasi);
+					}
+					if (data.sukses) {
+						swal({
+								title: "Simpan Data",
+								text: data.sukses,
+								type: "success",
+								showCancelButton: false,
+								closeOnConfirm: false,
+								showLoaderOnConfirm: true,
+							},
+							function() {
+								window.location = "<?= base_url('kunjungan/kunjungan/today') ?>"
+
+							});
+					}
+				}
+
+			})
+			return false;
+		})
+		// $('.select2bs4').select2({
+		// 	theme: 'bootstrap4'
+		// })
+		$('.select2bs4').select2()
+
+	})
+</script>
+<script>
+	$(document).ready(function() {
+		$('#tablepenjamin').DataTable()
+		$(document).on('click', '#selectpenjamin', function() {
+			var id = $(this).data('id');
+			var kode_penjamin = $(this).data('kode_penjamin');
+			var nama_penjamin = $(this).data('nama_penjamin');
+			$('#id_penjamin').val(id);
+			$('#kode_penjamin').val(kode_penjamin);
+			$('#nama_penjamin').val(nama_penjamin);
+			$('#modal-penjamin').modal('hide')
+		});
+	});
+</script>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="10"
+          d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,192C420,171,480,149,540,160C600,171,660,213,720,197.3C780,181,840,107,900,101.3C960,96,1020,160,1080,197.3C1140,235,1200,245,1260,234.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="herman-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required/>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required/>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="10"
+          d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,192C420,171,480,149,540,160C600,171,660,213,720,197.3C780,181,840,107,900,101.3C960,96,1020,160,1080,197.3C1140,235,1200,245,1260,234.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center pb-5">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="#" class="text-white fw-bold">Herman Kaelani</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyiQ6NoWG-5HbkjddArTSM1rlC5kLp_1J1dwxIqWwdj3JBkgJbVYZYRK5s_K1WOSAvP/exec';
+      const form = document.forms['herman-contact-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // reset formnya
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+	  <script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js?v=3.2.0"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard3.js"></script>
+  </body>
+</html>
